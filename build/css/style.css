@@ -2369,6 +2369,7 @@ supported by Chrome, Edge, Opera and Firefox */
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 100%;
 }
 .hero__item picture::before {
   content: "";

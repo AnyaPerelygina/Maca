@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {addToggleMenu} from './modules/header/toggle';
 import {initAccordions} from './vendor/accordion/init-accordion';
+import {createHeroSlider} from './modules/hero/hero-slider';
 
 // ---------------------------------
 
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     addToggleMenu();
     initAccordions();
+    createHeroSlider();
   });
 });
 

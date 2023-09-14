@@ -1755,7 +1755,7 @@ button.about__button svg {
   left: -20px;
   width: 42px;
   height: 42px;
-  background-image: url("../../img/svg/star.svg");
+  background-image: url("../img/svg/star.svg");
   z-index: 55;
 }
 @media (max-width: 1199px) {

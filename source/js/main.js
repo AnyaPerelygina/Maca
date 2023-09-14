@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {CustomSelect} from './vendor/select/custom-select';
 import {addToggleMenu} from './modules/header/toggle';
 import {initAccordions} from './vendor/accordion/init-accordion';
 import {createHeroSlider} from './modules/hero/hero-slider';
@@ -24,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    const select = new CustomSelect();
+    select.init();
     addToggleMenu();
     initAccordions();
     createHeroSlider();

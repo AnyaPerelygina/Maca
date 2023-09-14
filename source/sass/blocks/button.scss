@@ -1,13 +1,13 @@
 .button {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   width: 196px;
   height: 54px;
   background-color: $color-transparent;
   border: 1px solid $color-cerulean-blue;
   border-radius: 30px;
+  position: relative;
   outline: none;
   cursor: pointer;
 
@@ -37,6 +37,8 @@
     width: 46px;
     color: $color-default-white;
     background-color: $color-cerulean-blue;
+    position: absolute;
+    right: 0;
     padding: 10px 19px;
     margin-right: 3px;
     border-radius: 50%;

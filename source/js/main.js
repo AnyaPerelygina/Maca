@@ -5,6 +5,7 @@ import {CustomSelect} from './vendor/select/custom-select';
 import {addToggleMenu} from './modules/header/toggle';
 import {initAccordions} from './vendor/accordion/init-accordion';
 import {createHeroSlider} from './modules/hero/hero-slider';
+import {createProgramsSlider} from './modules/programs/programs';
 
 // ---------------------------------
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     addToggleMenu();
     initAccordions();
     createHeroSlider();
+    createProgramsSlider();
   });
 });
 

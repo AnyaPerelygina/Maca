@@ -1,0 +1,295 @@
+.programs {
+  padding: 62px 100px 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 0 0 50px 45px;
+  }
+
+  @include vp-767 {
+    padding: 19px 15px 139px;
+  }
+}
+
+.programs__container {
+  position: relative;
+  background-color: $color-alabaster;
+}
+
+.programs__title {
+  margin: 0 0 46px;
+  padding-right: 242px;
+  color: $color-cerulean-blue;
+  text-align: start;
+
+  @include vp-1199 {
+    margin: 0 0 45px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 32px;
+    padding-right: 60px;
+  }
+}
+
+.programs__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 232px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  padding: 0 0 0 29px;
+  text-transform: uppercase;
+  color: $color-cerulean-blue;
+
+  @include vp-1199 {
+    justify-content: center;
+    padding: 0 50px 0 0;
+    width: 32%;
+    margin: 0 45px 0 0;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+    top: auto;
+    right: auto;
+    bottom: -72px;
+    left: 0;
+    min-width: 203px;
+    width: 70%;
+    padding: 0 38px 0 0;
+  }
+}
+
+.programs__slider {
+  margin: 0 0 40px;
+
+  @include vp-1199 {
+    overflow: hidden;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.programs__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 392px;
+  max-height: 420px;
+
+  @include vp-1199 {
+    width: 100%;
+    min-width: 324px;
+    height: auto;
+    max-height: unset;
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    width: 100%;
+  }
+
+  picture {
+    position: relative;
+    object-fit: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(49, 109, 194, 0.2);
+      inset: 0;
+      border-radius: 12px;
+
+      @include vp-1199 {
+        width: 100%;
+        min-width: 324px;
+      }
+
+      @include vp-767 {
+        min-width: 290px;
+      }
+    }
+  }
+
+  img {
+    border-radius: 12px;
+
+    @include vp-1199 {
+      width: 100%;
+      min-width: 324px;
+    }
+
+    @include vp-767 {
+      min-width: 290px;
+    }
+  }
+}
+
+.programs__text {
+  position: absolute;
+  padding: 20px;
+  text-align: start;
+
+  h3 {
+    position: relative;
+    max-width: 194px;
+    width: 100%;
+    margin: 0;
+    padding: 13px 18px 2px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: $color-cerulean-blue;
+    background-color: $color-default-white;
+    border-radius: 12px 12px 0 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: -19px;
+      width: 20px;
+      height: 20px;
+      background-image: url('../../img/sprite/angle-up.svg');
+      z-index: 3;
+
+      @include vp-1199 {
+        top: 20px;
+        right: -20px;
+      }
+
+      @include vp-767 {
+        top: 23px;
+      }
+    }
+  }
+
+  @include vp-1199 {
+    padding-right: 41px;
+
+    h3 {
+      width: 173px;
+      padding: 13px 18px 1px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 18px 10px;
+
+    h3 {
+      width: 146px;
+      padding: 18px 18px 6px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}
+
+.programs__text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 79px;
+  padding: 11px 18px 14px;
+  background-color: $color-default-white;
+  border-radius: 0 12px 12px 12px;
+  gap: 0 16px;
+
+  p {
+    max-width: 239px;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include vp-1199 {
+      width: auto;
+      max-width: 80%;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      max-width: 100%;
+      font-size: 12px;
+      line-height: 14px;
+      align-self: flex-start;
+      padding: 7px 0 0 0;
+    }
+  }
+
+  @include vp-1199 {
+    min-height: 77px;
+    padding: 7px 18px 10px;
+    gap: 0 15px;
+  }
+
+  @include vp-767 {
+    min-height: 69px;
+    padding-bottom: 9px;
+  }
+}
+
+.programs__arrow-button {
+  flex-shrink: 0;
+}
+
+.programs__controls {
+  display: flex;
+  align-items: center;
+  gap: 0 52px;
+
+  @include vp-1199 {
+    gap: 0 64px;
+    margin: 0 45px 0 0;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
+}
+
+.programs__scrollbar {
+  width: 100%;
+  height: 2px;
+  margin: 0 0 2px;
+  background-color: rgba($color-cerulean-blue, 0.2);
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.programs__scrollbar .swiper-scrollbar-drag {
+  background-color: $color-cerulean-blue;
+}
+
+.programs__arrows {
+  display: flex;
+  margin-left: auto;
+  gap: 0 10px;
+
+  @include vp-767 {
+    gap: 0 8px;
+  }
+}

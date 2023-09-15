@@ -6,6 +6,8 @@ import {addToggleMenu} from './modules/header/toggle';
 import {initAccordions} from './vendor/accordion/init-accordion';
 import {createHeroSlider} from './modules/hero/hero-slider';
 import {createProgramsSlider} from './modules/programs/programs';
+import {addTabHandler} from './modules/news/news-tab';
+import {createNewsSlider} from './modules/news/news-slider';
 
 // ---------------------------------
 
@@ -19,6 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  createNewsSlider();
+  addToggleMenu();
+  initAccordions();
+  createHeroSlider();
+  createProgramsSlider();
+  addTabHandler();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
@@ -28,10 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     const select = new CustomSelect();
     select.init();
-    addToggleMenu();
-    initAccordions();
-    createHeroSlider();
-    createProgramsSlider();
   });
 });
 

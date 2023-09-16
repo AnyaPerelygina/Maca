@@ -9,6 +9,7 @@ import {createProgramsSlider} from './modules/programs/programs';
 import {addTabHandler} from './modules/news/news-tab';
 import {createNewsSlider} from './modules/news/news-slider';
 import {createReviewsSlider} from './modules/reviews/reviews';
+import {initLeaflet} from './modules/leaflet/leaflet';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createProgramsSlider();
   addTabHandler();
   createReviewsSlider();
+  initLeaflet();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

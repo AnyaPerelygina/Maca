@@ -51,14 +51,14 @@
   justify-content: center;
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: -21px;
     left: -20px;
     width: 42px;
     height: 42px;
-    background-image: url('../img/svg/star.svg');
+    background-image: url("../img/svg/star.svg");
     background-repeat: no-repeat;
     z-index: 55;
 
@@ -137,7 +137,6 @@
   @include vp-1199 {
     font-size: 20px;
     line-height: 22px;
-    max-width: auto;
     align-self: start;
     margin: 0 0 7px;
     max-width: unset;

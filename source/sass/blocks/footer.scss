@@ -23,9 +23,9 @@
   @include vp-1199 {
     grid-template-columns: 52px 1fr;
     grid-template-areas:
-    "A B B"
-    "E E C"
-    "D D C";
+      "A B B"
+      "E E C"
+      "D D C";
     row-gap: 11px;
   }
 

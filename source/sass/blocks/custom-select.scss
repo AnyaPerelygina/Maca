@@ -43,7 +43,7 @@
   &--secondary {
     &:hover,
     &:focus,
-    &:focus-within  {
+    &:focus-within {
       .custom-select__button {
         border-color: $color-charcoal;
       }

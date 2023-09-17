@@ -2392,6 +2392,10 @@ button.about__button svg {
   button.about__button {
     min-width: 277px;
     width: 41%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 50px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -2400,7 +2404,7 @@ button.about__button svg {
     line-height: 12px;
     min-width: 221px;
     width: 76%;
-    padding: 0 3px 0 20px;
+    padding: 0 37px 0 0;
   }
 }
 

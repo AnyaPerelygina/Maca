@@ -248,6 +248,7 @@
       width: 16px;
       height: 16px;
       background-image: url('data:image/svg+xml,\<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/>\</svg>');
+      background-repeat: no-repeat;
     }
 
     &::after {
@@ -258,6 +259,7 @@
       width: 16px;
       height: 16px;
       background-image: url('data:image/svg+xml,\<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/>\</svg>');
+      background-repeat: no-repeat;
     }
   }
 
@@ -311,6 +313,7 @@
     width: 16px;
     height: 16px;
     background-image: url('data:image/svg+xml,\<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/>\</svg>');
+    background-repeat: no-repeat;
   }
 }
 
@@ -332,6 +335,7 @@
     width: 16px;
     height: 16px;
     background-image: url('data:image/svg+xml,\<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/>\</svg>');
+    background-repeat: no-repeat;
   }
 
   p {

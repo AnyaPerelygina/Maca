@@ -2491,7 +2491,8 @@ button.about__button svg {
   left: -20px;
   width: 42px;
   height: 42px;
-  background-image: url("../../img/svg/star.svg");
+  background-image: url("../img/svg/star.svg");
+  background-repeat: no-repeat;
   z-index: 55;
 }
 @media (max-width: 1199px) {
@@ -4871,7 +4872,8 @@ button.about__button svg {
   bottom: 0;
   width: 20px;
   height: 20px;
-  background-image: url("../../img/svg/angle-up.svg");
+  background-image: url("../img/svg/angle-up.svg");
+  background-repeat: no-repeat;
 }
 @media (max-width: 1199px) {
   .swiper .hero__pagination::before {
@@ -4960,7 +4962,8 @@ button.about__button svg {
   right: -18px;
   width: 20px;
   height: 20px;
-  background-image: url("../../img/svg/angle-down.svg");
+  background-image: url("../img/svg/angle-down.svg");
+  background-repeat: no-repeat;
 }
 @media (max-width: 1199px) {
   .hero__text::before {
@@ -5012,7 +5015,8 @@ button.about__button svg {
     right: -18px;
     width: 20px;
     height: 20px;
-    background-image: url("../../img/svg/angle-down.svg");
+    background-image: url("../img/svg/angle-down.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -5029,7 +5033,8 @@ button.about__button svg {
     right: -19px;
     width: 20px;
     height: 20px;
-    background-image: url("../../img/svg/angle-down.svg");
+    background-image: url("../img/svg/angle-down.svg");
+    background-repeat: no-repeat;
   }
 }
 @media (max-width: 1199px) {
@@ -5042,7 +5047,7 @@ button.about__button svg {
     position: relative;
     margin: 0;
     padding: 10px 15px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0 0 14px 14px;
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
@@ -5691,6 +5696,7 @@ button.about__button svg {
   width: 16px;
   height: 16px;
   background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/></svg>');
+  background-repeat: no-repeat;
 }
 .news__content .news__data::after {
   content: "";
@@ -5700,6 +5706,7 @@ button.about__button svg {
   width: 16px;
   height: 16px;
   background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/></svg>');
+  background-repeat: no-repeat;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .news__content {
@@ -5750,6 +5757,7 @@ button.about__button svg {
   width: 16px;
   height: 16px;
   background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/></svg>');
+  background-repeat: no-repeat;
 }
 
 .news__text {
@@ -5776,6 +5784,7 @@ button.about__button svg {
   width: 16px;
   height: 16px;
   background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 16C7.16344 16 0 8.83656 0 0V16H16Z" fill="%23f0efe9"/></svg>');
+  background-repeat: no-repeat;
 }
 .news__text p {
   max-width: 176px;
@@ -6128,22 +6137,23 @@ button.about__button svg {
 .programs__text h3::before {
   content: "";
   position: absolute;
-  top: 22px;
-  right: -19px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../../img/svg/angle-up.svg");
+  top: 24px;
+  right: -18px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/svg/angle-up.svg");
+  background-repeat: no-repeat;
   z-index: 3;
 }
 @media (max-width: 1199px) {
   .programs__text h3::before {
     top: 20px;
-    right: -20px;
+    right: -18px;
   }
 }
 @media (max-width: 767px) {
   .programs__text h3::before {
-    top: 23px;
+    top: 24px;
   }
 }
 @media (max-width: 1199px) {

@@ -118,7 +118,8 @@
     bottom: 0;
     width: 20px;
     height: 20px;
-    background-image: url('../../img/svg/angle-up.svg');
+    background-image: url('../img/svg/angle-up.svg');
+    background-repeat: no-repeat;
 
     @include vp-1199 {
       right: -20px;
@@ -192,7 +193,8 @@
     right: -18px;
     width: 20px;
     height: 20px;
-    background-image: url('../../img/svg/angle-down.svg');
+    background-image: url('../img/svg/angle-down.svg');
+    background-repeat: no-repeat;
 
     @include vp-1199 {
       top: 3px;
@@ -236,7 +238,8 @@
         right: -18px;
         width: 20px;
         height: 20px;
-        background-image: url('../../img/svg/angle-down.svg');
+        background-image: url('../img/svg/angle-down.svg');
+        background-repeat: no-repeat;
       }
     }
   }
@@ -253,7 +256,8 @@
       right: -19px;
       width: 20px;
       height: 20px;
-      background-image: url('../../img/svg/angle-down.svg');
+      background-image: url('../img/svg/angle-down.svg');
+      background-repeat: no-repeat;
     }
   }
 
@@ -265,7 +269,7 @@
     position: relative;
     margin: 0;
     padding: 10px 15px;
-    background-color: #fff;
+    background-color: $color-default-white;
     border-radius: 0 0 14px 14px;
     align-self: start;
   }

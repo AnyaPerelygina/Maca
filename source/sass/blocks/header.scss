@@ -4,7 +4,7 @@
   background-color: transparent;
   z-index: 3;
 
-  .header.is-opened {
+  &.is-opened {
     &::before {
       content: "";
       position: absolute;

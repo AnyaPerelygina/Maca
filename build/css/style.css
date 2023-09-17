@@ -4636,7 +4636,7 @@ button.about__button svg {
   background-color: transparent;
   z-index: 3;
 }
-.header .header.is-opened::before {
+.header.is-opened::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -5295,6 +5295,7 @@ button.about__button svg {
   z-index: 2;
   display: block;
   width: 286px;
+  max-height: 398px;
   padding: 28px 25px;
   overflow-y: auto;
   background-color: #316dc2;
@@ -5305,6 +5306,11 @@ button.about__button svg {
   visibility: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media (max-height: 485px) {
+  .nav {
+    max-height: 62vh;
+  }
 }
 
 .nav.is-opened {

@@ -1,7 +1,5 @@
-.footer__container {
-  margin: 0 auto;
-  padding: 50px 100px;
-  max-width: 1440px;
+.footer {
+  padding: 30px 100px 50px;
 
   @include vp-1199 {
     padding: 27px 45px 27px;
@@ -10,6 +8,11 @@
   @include vp-767 {
     padding: 15px 15px 30px;
   }
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .footer__wrapper {

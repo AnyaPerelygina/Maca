@@ -100,6 +100,40 @@
     }
   }
 
+  &--primary {
+    label {
+      &:hover {
+        &:not(:has(input:disabled, textarea:disabled)) {
+          input,
+          textarea {
+            border-color: $color-default-white;
+          }
+        }
+      }
+
+      &:focus-within {
+        input,
+        textarea {
+          border-color: $color-default-white;
+        }
+      }
+
+      &:has(input:disabled, textarea:disabled) {
+        input,
+        textarea {
+          background-color: rgba($color-default-white, 0.2);
+          border-color: rgba($color-default-white, 0.5);
+        }
+      }
+    }
+
+    input,
+    textarea {
+      color: inherit;
+      border-color: rgba($color-default-white, 0.3);
+    }
+  }
+
   @include vp-767 {
     label {
       gap: 11px 0;

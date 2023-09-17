@@ -102,6 +102,8 @@
 
   &--primary {
     label {
+      color: $color-alabaster;
+
       &:hover {
         &:not(:has(input:disabled, textarea:disabled)) {
           input,

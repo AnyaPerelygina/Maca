@@ -162,6 +162,7 @@
     text-transform: uppercase;
     letter-spacing: 0.22px;
     background-color: $color-cerulean-blue;
+    color: $color-default-white;
     counter-increment: instruction__conditions;
 
     @include vp-767 {

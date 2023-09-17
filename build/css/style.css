@@ -3321,6 +3321,10 @@ button.about__button svg {
   color: inherit;
   border-color: rgba(72, 72, 72, 0.3);
 }
+.custom-input--primary label,
+.custom-textarea--primary label {
+  color: #f0efe9;
+}
 .custom-input--primary label:hover:not(:has(input:disabled, textarea:disabled)) input,
 .custom-input--primary label:hover:not(:has(input:disabled, textarea:disabled)) textarea,
 .custom-textarea--primary label:hover:not(:has(input:disabled, textarea:disabled)) input,
@@ -4187,7 +4191,7 @@ button.about__button svg {
   line-height: 26px;
   font-weight: 400;
   text-align: start;
-  color: rgba(255, 255, 255, 0.9);
+  color: #f0efe9;
   margin: 0 0 21px;
   padding: 0;
 }
@@ -4235,34 +4239,26 @@ button.about__button svg {
 .feedback__form .custom-select {
   gap: 13px 0;
 }
-.feedback__form .custom-select__button--secondary,
-.feedback__form .custom-toggle__icon--secondary {
-  border-color: rgba(255, 255, 255, 0.3);
-}
-.feedback__form .custom-select__button--secondary span,
-.feedback__form .custom-toggle__icon--secondary span {
-  background-color: rgba(255, 255, 255, 0.3);
+.feedback__form .custom-select__button--primary,
+.feedback__form .custom-toggle__icon--primary {
+  border-color: rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 767px) {
-  .feedback__form .custom-select__button--secondary {
+  .feedback__form .custom-select__button--primary {
     min-height: 50px;
   }
 }
 @media (max-width: 767px) {
-  .feedback__form .custom-input--secondary label,
-.feedback__form .custom-textarea--secondary label {
+  .feedback__form .custom-input--primary label,
+.feedback__form .custom-textarea--primary label {
     gap: 11px 0;
   }
 }
 @media (max-width: 767px) {
-  .feedback__form .custom-input--secondary input,
-.feedback__form .custom-textarea--secondary input {
+  .feedback__form .custom-input--primary input,
+.feedback__form .custom-textarea--primary input {
     padding: 11px 20px 19px;
   }
-}
-
-.feedback__form .custom-input input:hover {
-  border-color: #ffffff;
 }
 
 .feedback__button {
@@ -5269,6 +5265,7 @@ button.about__button svg {
   text-transform: uppercase;
   letter-spacing: 0.22px;
   background-color: #316dc2;
+  color: #ffffff;
   counter-increment: instruction__conditions;
 }
 @media (max-width: 767px) {

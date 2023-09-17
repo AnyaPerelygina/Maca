@@ -7,7 +7,7 @@ const createHeroSlider = () => {
     new swiper('.hero__swiper', {
     /* eslint-enable */
       speed: 1500,
-      loop: true,
+      loop: false,
       effect: 'fade',
       autoplay: {
         delay: 3000,
@@ -28,6 +28,8 @@ const createHeroSlider = () => {
         el: '.hero__pagination',
         type: 'bullets',
         clickable: true,
+        slidesPerView: 1,
+        centeredSlides: true,
       },
     });
   }

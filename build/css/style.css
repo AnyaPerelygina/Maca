@@ -4632,16 +4632,19 @@ button.about__button svg {
 
 .header {
   position: absolute;
+  content: "";
   width: 100%;
   background-color: transparent;
   z-index: 3;
 }
-.header.is-opened::before {
-  content: "";
+
+.header__container.is-opened::before {
   position: absolute;
-  z-index: 1;
+  content: "";
+  z-index: 2;
   background-color: rgba(13, 29, 51, 0.2);
   inset: 0;
+  height: 100vh;
 }
 
 .header__container {

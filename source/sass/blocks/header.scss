@@ -1,17 +1,19 @@
 .header {
   position: absolute;
+  content: "";
   width: 100%;
   background-color: transparent;
   z-index: 3;
+}
 
-  &.is-opened {
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      background-color: $overlay-dark;
-      inset: 0;
-    }
+.header__container.is-opened {
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    background-color: $overlay-dark;
+    inset: 0;
+    height: 100vh;
   }
 }
 

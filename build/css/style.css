@@ -6830,7 +6830,6 @@ button.about__button svg {
   .toggle.is-opened {
     left: 15px;
     width: auto;
-    right: 15px;
   }
 }
 .toggle.is-opened:hover, .toggle.is-opened:focus, .toggle.is-opened:focus-visible {

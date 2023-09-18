@@ -1,5 +1,5 @@
 .faq {
-  padding: 64px 206px 60px;
+  padding: 64px 206px 66px;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     padding: 64px 100px 60px;
@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 0 15px 30px;
+    padding: 0 15px 41px;
   }
 }
 
@@ -26,10 +26,10 @@
 .faq__title {
   color: $color-cerulean-blue;
   text-align: center;
-  margin: 0 0 69px;
+  margin: 0 0 66px;
 
   @include vp-1199 {
-    margin: 0 0 41px;
+    margin: 0 0 40px;
   }
 
   @include vp-767 {
@@ -52,7 +52,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px;
+  padding: 0;
   margin: 0;
   border: 1px solid $color-cerulean-blue;
   border-radius: 16px;
@@ -108,13 +108,37 @@
     }
   }
 
+  // @include vp-1199 {
+  //   padding: 30px;
+  // }
+
+  @include vp-767 {
+    // padding: 20px 15px;
+    border-radius: 14px;
+  }
+}
+
+.faq__content {
+  padding: 39px;
+
   @include vp-1199 {
-    padding: 30px;
+    padding: 29px;
   }
 
   @include vp-767 {
-    padding: 20px 15px;
-    border-radius: 14px;
+    padding: 19px 14px;
+  }
+}
+
+.faq__item.is-active .faq__content {
+  padding: 39px 39px 32px;
+
+  @include vp-1199 {
+    padding: 29px 29px 25px;
+  }
+
+  @include vp-767 {
+    padding: 19px 14px 14px;
   }
 }
 
@@ -167,14 +191,14 @@
   color: $color-cerulean-blue;
   text-align: start;
   width: 70%;
-  margin: 0;
+  margin: -7px 0;
   padding: 0;
 
   @include vp-1199 {
     font-size: 22px;
     line-height: 26px;
     width: 80%;
-    margin: 5px 0 0;
+    margin: -9px 0 0;
   }
 
   @include vp-767 {
@@ -192,9 +216,6 @@
 .faq__answer {
   max-height: 0;
   overflow: hidden;
-  transition:
-    max-height $trans-default,
-    margin 0.3s;
 
   p {
     color: $color-cerulean-blue;
@@ -205,6 +226,7 @@
 
     @include vp-1199 {
       line-height: 20px;
+      width: 85%;
     }
 
     @include vp-767 {

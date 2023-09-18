@@ -31,30 +31,6 @@
       }
     }
 
-    &:checked {
-      &:hover,
-      &:focus {
-        & + .custom-toggle__icon {
-          background-color: $color-transparent;
-
-          &::before {
-            background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
-          }
-        }
-      }
-
-      &:disabled {
-        & + .custom-toggle__icon {
-          background-color: $color-mischka;
-          border-color: $color-mischka;
-
-          &::before {
-            background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
-          }
-        }
-      }
-    }
-
     &:hover,
     &:focus {
       & + .custom-toggle__icon {
@@ -71,63 +47,85 @@
     }
   }
 
-  &--secondary {
-    input {
-      &:checked + .custom-toggle__icon {
-        background-color: $color-cerulean-blue;
-        border-color: $color-cerulean-blue;
-
-        &::before {
-          background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
-        }
-      }
-
-      &:checked {
-        &:hover,
-        &:focus {
-          & + .custom-toggle__icon {
-            background-color: $color-transparent;
-
-            &::before {
-              background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23484848" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
-            }
-          }
-        }
-
-        &:disabled {
-          & + .custom-toggle__icon {
-            background-color: $color-mischka;
-            border-color: $color-mischka;
-
-            &::before {
-              background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
-            }
-          }
-        }
-      }
-
-      &:hover,
-      &:focus {
-        & + .custom-toggle__icon {
-          border-color: $color-charcoal;
-        }
-      }
-
-      &:disabled {
-        & + .custom-toggle__icon {
-          background-color: rgba($color-charcoal, 0.6);
-          border-color: $color-charcoal;
-        }
-      }
-    }
-  }
-
   @include vp-767 {
     margin: 0;
     line-height: 14px;
 
     &--secondary {
       margin: 1px 0 0;
+    }
+  }
+}
+
+.custom-toggle--secondary input {
+  &:checked + .custom-toggle__icon {
+    background-color: $color-cerulean-blue;
+    border-color: $color-cerulean-blue;
+
+    &::before {
+      background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+    }
+  }
+
+  &:checked {
+    &:hover,
+    &:focus {
+      & + .custom-toggle__icon {
+        background-color: $color-transparent;
+
+        &::before {
+          background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23484848" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+        }
+      }
+    }
+
+    &:disabled {
+      & + .custom-toggle__icon {
+        background-color: $color-mischka;
+        border-color: $color-mischka;
+
+        &::before {
+          background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+        }
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    & + .custom-toggle__icon {
+      border-color: $color-charcoal;
+    }
+  }
+
+  &:disabled {
+    & + .custom-toggle__icon {
+      background-color: rgba($color-charcoal, 0.6);
+      border-color: $color-charcoal;
+    }
+  }
+}
+
+.custom-toggle input:checked {
+  &:hover,
+  &:focus {
+    & + .custom-toggle__icon {
+      background-color: $color-transparent;
+
+      &::before {
+        background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+      }
+    }
+  }
+
+  &:disabled {
+    & + .custom-toggle__icon {
+      background-color: $color-mischka;
+      border-color: $color-mischka;
+
+      &::before {
+        background-image: url('data:image/svg+xml,\<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+      }
     }
   }
 }

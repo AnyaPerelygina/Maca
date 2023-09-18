@@ -3302,62 +3302,6 @@ button.about__button svg {
 .custom-textarea textarea {
   height: 98px;
 }
-.custom-input--secondary label:hover:not(:has(input:disabled, textarea:disabled)) input,
-.custom-input--secondary label:hover:not(:has(input:disabled, textarea:disabled)) textarea,
-.custom-textarea--secondary label:hover:not(:has(input:disabled, textarea:disabled)) input,
-.custom-textarea--secondary label:hover:not(:has(input:disabled, textarea:disabled)) textarea {
-  border-color: #484848;
-}
-.custom-input--secondary label:focus-within input,
-.custom-input--secondary label:focus-within textarea,
-.custom-textarea--secondary label:focus-within input,
-.custom-textarea--secondary label:focus-within textarea {
-  border-color: #484848;
-}
-.custom-input--secondary label:has(input:disabled, textarea:disabled) input,
-.custom-input--secondary label:has(input:disabled, textarea:disabled) textarea,
-.custom-textarea--secondary label:has(input:disabled, textarea:disabled) input,
-.custom-textarea--secondary label:has(input:disabled, textarea:disabled) textarea {
-  background-color: rgba(169, 175, 183, 0.2);
-  border-color: rgba(72, 72, 72, 0.5);
-}
-.custom-input--secondary input,
-.custom-input--secondary textarea,
-.custom-textarea--secondary input,
-.custom-textarea--secondary textarea {
-  color: inherit;
-  border-color: rgba(72, 72, 72, 0.3);
-}
-.custom-input--primary label,
-.custom-textarea--primary label {
-  color: #f0efe9;
-}
-.custom-input--primary label:hover:not(:has(input:disabled, textarea:disabled)) input,
-.custom-input--primary label:hover:not(:has(input:disabled, textarea:disabled)) textarea,
-.custom-textarea--primary label:hover:not(:has(input:disabled, textarea:disabled)) input,
-.custom-textarea--primary label:hover:not(:has(input:disabled, textarea:disabled)) textarea {
-  border-color: #ffffff;
-}
-.custom-input--primary label:focus-within input,
-.custom-input--primary label:focus-within textarea,
-.custom-textarea--primary label:focus-within input,
-.custom-textarea--primary label:focus-within textarea {
-  border-color: #ffffff;
-}
-.custom-input--primary label:has(input:disabled, textarea:disabled) input,
-.custom-input--primary label:has(input:disabled, textarea:disabled) textarea,
-.custom-textarea--primary label:has(input:disabled, textarea:disabled) input,
-.custom-textarea--primary label:has(input:disabled, textarea:disabled) textarea {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-.custom-input--primary input,
-.custom-input--primary textarea,
-.custom-textarea--primary input,
-.custom-textarea--primary textarea {
-  color: inherit;
-  border-color: rgba(255, 255, 255, 0.3);
-}
 @media (max-width: 767px) {
   .custom-input label,
 .custom-textarea label {
@@ -3377,6 +3321,47 @@ button.about__button svg {
 .custom-textarea--secondary textarea {
     padding: 11px 20px 12px;
   }
+}
+
+.custom-input--primary label {
+  color: #f0efe9;
+}
+.custom-input--primary label:hover:not(:has(input:disabled, textarea:disabled)) input,
+.custom-input--primary label:hover:not(:has(input:disabled, textarea:disabled)) textarea {
+  border-color: #ffffff;
+}
+.custom-input--primary label:focus-within input,
+.custom-input--primary label:focus-within textarea {
+  border-color: #ffffff;
+}
+.custom-input--primary label:has(input:disabled, textarea:disabled) input,
+.custom-input--primary label:has(input:disabled, textarea:disabled) textarea {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.custom-input--primary input,
+.custom-input--primary textarea {
+  color: inherit;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.custom-input--secondary label:hover:not(:has(input:disabled, textarea:disabled)) input,
+.custom-input--secondary label:hover:not(:has(input:disabled, textarea:disabled)) textarea {
+  border-color: #484848;
+}
+.custom-input--secondary label:focus-within input,
+.custom-input--secondary label:focus-within textarea {
+  border-color: #484848;
+}
+.custom-input--secondary label:has(input:disabled, textarea:disabled) input,
+.custom-input--secondary label:has(input:disabled, textarea:disabled) textarea {
+  background-color: rgba(169, 175, 183, 0.2);
+  border-color: rgba(72, 72, 72, 0.5);
+}
+.custom-input--secondary input,
+.custom-input--secondary textarea {
+  color: inherit;
+  border-color: rgba(72, 72, 72, 0.3);
 }
 
 .custom-input__label,
@@ -3439,19 +3424,6 @@ button.about__button svg {
 .custom-toggle input:checked + .custom-toggle__icon::before {
   opacity: 1;
 }
-.custom-toggle input:checked:hover + .custom-toggle__icon, .custom-toggle input:checked:focus + .custom-toggle__icon {
-  background-color: rgba(255, 255, 255, 0);
-}
-.custom-toggle input:checked:hover + .custom-toggle__icon::before, .custom-toggle input:checked:focus + .custom-toggle__icon::before {
-  background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-}
-.custom-toggle input:checked:disabled + .custom-toggle__icon {
-  background-color: #a9afb7;
-  border-color: #a9afb7;
-}
-.custom-toggle input:checked:disabled + .custom-toggle__icon::before {
-  background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-}
 .custom-toggle input:hover + .custom-toggle__icon, .custom-toggle input:focus + .custom-toggle__icon {
   border-color: #ffffff;
 }
@@ -3460,6 +3432,16 @@ button.about__button svg {
   border-color: #ffffff;
   pointer-events: none;
 }
+@media (max-width: 767px) {
+  .custom-toggle {
+    margin: 0;
+    line-height: 14px;
+  }
+  .custom-toggle--secondary {
+    margin: 1px 0 0;
+  }
+}
+
 .custom-toggle--secondary input:checked + .custom-toggle__icon {
   background-color: #316dc2;
   border-color: #316dc2;
@@ -3487,14 +3469,19 @@ button.about__button svg {
   background-color: rgba(72, 72, 72, 0.6);
   border-color: #484848;
 }
-@media (max-width: 767px) {
-  .custom-toggle {
-    margin: 0;
-    line-height: 14px;
-  }
-  .custom-toggle--secondary {
-    margin: 1px 0 0;
-  }
+
+.custom-toggle input:checked:hover + .custom-toggle__icon, .custom-toggle input:checked:focus + .custom-toggle__icon {
+  background-color: rgba(255, 255, 255, 0);
+}
+.custom-toggle input:checked:hover + .custom-toggle__icon::before, .custom-toggle input:checked:focus + .custom-toggle__icon::before {
+  background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.custom-toggle input:checked:disabled + .custom-toggle__icon {
+  background-color: #a9afb7;
+  border-color: #a9afb7;
+}
+.custom-toggle input:checked:disabled + .custom-toggle__icon::before {
+  background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 .custom-toggle--checkbox .custom-toggle__icon {
@@ -3860,6 +3847,12 @@ button.about__button svg {
   border-radius: 16px;
   cursor: pointer;
 }
+@media (max-width: 767px) {
+  .faq__item {
+    border-radius: 14px;
+  }
+}
+
 .faq__item:not(.is-active):has(.faq__button:active) .faq__question-title {
   color: #275699;
 }
@@ -3889,11 +3882,6 @@ button.about__button svg {
 }
 .faq__item:not(.is-active):active .faq__button::before, .faq__item:not(.is-active):active .faq__button::after {
   background-color: #ffffff;
-}
-@media (max-width: 767px) {
-  .faq__item {
-    border-radius: 14px;
-  }
 }
 
 .faq__content {

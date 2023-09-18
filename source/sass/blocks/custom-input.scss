@@ -66,76 +66,6 @@
     height: 98px;
   }
 
-  &--secondary {
-    label {
-      &:hover {
-        &:not(:has(input:disabled, textarea:disabled)) {
-          input,
-          textarea {
-            border-color: $color-charcoal;
-          }
-        }
-      }
-
-      &:focus-within {
-        input,
-        textarea {
-          border-color: $color-charcoal;
-        }
-      }
-
-      &:has(input:disabled, textarea:disabled) {
-        input,
-        textarea {
-          background-color: rgba($color-mischka, 0.2);
-          border-color: rgba($color-charcoal, 0.5);
-        }
-      }
-    }
-
-    input,
-    textarea {
-      color: inherit;
-      border-color: rgba($color-charcoal, 0.3);
-    }
-  }
-
-  &--primary {
-    label {
-      color: $color-alabaster;
-
-      &:hover {
-        &:not(:has(input:disabled, textarea:disabled)) {
-          input,
-          textarea {
-            border-color: $color-default-white;
-          }
-        }
-      }
-
-      &:focus-within {
-        input,
-        textarea {
-          border-color: $color-default-white;
-        }
-      }
-
-      &:has(input:disabled, textarea:disabled) {
-        input,
-        textarea {
-          background-color: rgba($color-default-white, 0.2);
-          border-color: rgba($color-default-white, 0.5);
-        }
-      }
-    }
-
-    input,
-    textarea {
-      color: inherit;
-      border-color: rgba($color-default-white, 0.3);
-    }
-  }
-
   @include vp-767 {
     label {
       gap: 11px 0;
@@ -155,6 +85,76 @@
         padding: 11px 20px 12px;
       }
     }
+  }
+}
+
+.custom-input--primary {
+  label {
+    color: $color-alabaster;
+
+    &:hover {
+      &:not(:has(input:disabled, textarea:disabled)) {
+        input,
+        textarea {
+          border-color: $color-default-white;
+        }
+      }
+    }
+
+    &:focus-within {
+      input,
+      textarea {
+        border-color: $color-default-white;
+      }
+    }
+
+    &:has(input:disabled, textarea:disabled) {
+      input,
+      textarea {
+        background-color: rgba($color-default-white, 0.2);
+        border-color: rgba($color-default-white, 0.5);
+      }
+    }
+  }
+
+  input,
+  textarea {
+    color: inherit;
+    border-color: rgba($color-default-white, 0.3);
+  }
+}
+
+.custom-input--secondary {
+  label {
+    &:hover {
+      &:not(:has(input:disabled, textarea:disabled)) {
+        input,
+        textarea {
+          border-color: $color-charcoal;
+        }
+      }
+    }
+
+    &:focus-within {
+      input,
+      textarea {
+        border-color: $color-charcoal;
+      }
+    }
+
+    &:has(input:disabled, textarea:disabled) {
+      input,
+      textarea {
+        background-color: rgba($color-mischka, 0.2);
+        border-color: rgba($color-charcoal, 0.5);
+      }
+    }
+  }
+
+  input,
+  textarea {
+    color: inherit;
+    border-color: rgba($color-charcoal, 0.3);
   }
 }
 

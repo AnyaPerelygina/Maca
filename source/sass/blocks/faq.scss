@@ -58,45 +58,33 @@
   border-radius: 16px;
   cursor: pointer;
 
-  &:not(.is-active) {
-    &:has(.faq__button:active) {
-      .faq__question-title {
-        color: $color-endeavour;
-      }
-    }
+  @include vp-767 {
+    border-radius: 14px;
+  }
+}
 
-    &:hover,
-    &:focus,
-    &:focus-within {
+.faq__item:not(.is-active) {
+  &:has(.faq__button:active) {
+    .faq__question-title {
+      color: $color-endeavour;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background-color: $color-default-white;
+
+    .faq__button {
       background-color: $color-default-white;
+      border-color: $color-cerulean-blue;
 
-      .faq__button {
-        background-color: $color-default-white;
-        border-color: $color-cerulean-blue;
-
-        &::before,
-        &::after {
-          background-color: $color-cerulean-blue;
-        }
-
-        &:active {
-          background-color: $color-endeavour;
-          border-color: $color-endeavour;
-
-          &::before,
-          &::after {
-            background-color: $color-default-white;
-          }
-        }
-      }
-    }
-
-    &:active {
-      .faq__question-title {
-        color: $color-endeavour;
+      &::before,
+      &::after {
+        background-color: $color-cerulean-blue;
       }
 
-      .faq__button {
+      &:active {
         background-color: $color-endeavour;
         border-color: $color-endeavour;
 
@@ -108,8 +96,20 @@
     }
   }
 
-  @include vp-767 {
-    border-radius: 14px;
+  &:active {
+    .faq__question-title {
+      color: $color-endeavour;
+    }
+
+    .faq__button {
+      background-color: $color-endeavour;
+      border-color: $color-endeavour;
+
+      &::before,
+      &::after {
+        background-color: $color-default-white;
+      }
+    }
   }
 }
 

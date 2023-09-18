@@ -11,7 +11,7 @@ const addToggleMenu = () => {
   };
 
   const onLinkClick = (evt) => {
-    return evt.target.matches(LINK_CLASS) ? closeMenu() : null;
+    return (evt.target.matches(LINK_CLASS) && !evt.target.matches('.nav__link--button')) ? closeMenu() : null;
   };
 
   const isMenu = (evt) => {

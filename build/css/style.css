@@ -5808,7 +5808,7 @@ button.about__button svg {
 .news__subtitle::after {
   content: "";
   position: absolute;
-  right: -16px;
+  right: -15px;
   bottom: 0;
   width: 16px;
   height: 16px;
@@ -5870,6 +5870,7 @@ button.about__button svg {
 @media (max-width: 767px) {
   .news__text {
     padding: 11px 11px 12px 0;
+    bottom: 0;
   }
 }
 

@@ -5081,8 +5081,8 @@ button.about__button svg {
 @media (max-width: 767px) {
   .hero__button-wrapper {
     position: relative;
-    margin: 0;
-    padding: 10px 15px;
+    margin: -2px 0 0;
+    padding: 12px 15px 10px;
     background-color: #ffffff;
     border-radius: 0 0 14px 14px;
     -ms-flex-item-align: start;

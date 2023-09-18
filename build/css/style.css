@@ -2316,7 +2316,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__wrapper-2 {
-    margin: 0 0 40px;
+    margin: 0 0 38px;
   }
 }
 .about__wrapper-2 p {
@@ -2373,7 +2373,7 @@ button.about__button {
   text-transform: uppercase;
   color: #316dc2;
   background-color: transparent;
-  padding: 0 3px 0 29px;
+  padding: 15px 29px 15px 29px;
 }
 button.about__button svg {
   margin: 0 3px 0 0;
@@ -2385,7 +2385,7 @@ button.about__button svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 50px 0 0;
+    padding: 15px 50px 15px 3px;
   }
 }
 @media (max-width: 767px) {
@@ -2394,7 +2394,7 @@ button.about__button svg {
     line-height: 12px;
     min-width: 221px;
     width: 76%;
-    padding: 0 37px 0 0;
+    padding: 15px 37px 15px 3px;
   }
 }
 
@@ -2691,7 +2691,7 @@ button.about__button svg {
       -ms-flex-align: center;
           align-items: center;
   width: 196px;
-  height: 54px;
+  min-height: 54px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #316dc2;
   border-radius: 30px;
@@ -2702,7 +2702,7 @@ button.about__button svg {
 @media (max-width: 767px) {
   .button {
     width: 152px;
-    height: 42px;
+    min-height: 42px;
   }
 }
 .button span {
@@ -2824,8 +2824,8 @@ button.about__button svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2848,6 +2848,7 @@ button.about__button svg {
   text-align: start;
   margin: 0;
   padding: 0;
+  max-width: 300px;
 }
 
 .contacts__list {
@@ -2861,6 +2862,8 @@ button.about__button svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 51px;
 }
 @media (max-width: 1199px) {
@@ -2912,7 +2915,6 @@ button.about__button svg {
   text-align: start;
   margin: 0;
   padding: 0;
-  max-width: 270px;
 }
 @media (max-width: 1199px) {
   .contacts__item p,
@@ -2936,6 +2938,13 @@ button.about__button svg {
 .contacts__item p:active,
 .contacts__item .contacts__link:active {
   opacity: 0.8;
+}
+.contacts__item p {
+  max-width: 270px;
+}
+
+.contacts__link {
+  max-width: 132px;
 }
 
 .contacts__subtitle {
@@ -3392,7 +3401,7 @@ button.about__button svg {
 }
 
 .custom-toggle {
-  margin: 2px 0 0;
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
 }
@@ -4193,7 +4202,7 @@ button.about__button svg {
 }
 @media (max-width: 1199px) {
   .feedback__form {
-    padding: 60px 45px 56px;
+    padding: 60px 45px 58px;
     max-width: unset;
     width: 65.2%;
   }
@@ -4455,6 +4464,7 @@ button.about__button svg {
     -ms-grid-column-align: end;
         justify-self: end;
     grid-area: B;
+    max-width: 530px;
   }
 }
 @media (max-width: 767px) {
@@ -4477,6 +4487,7 @@ button.about__button svg {
             column-gap: 30px;
     row-gap: 6px;
     margin-bottom: 8px;
+    max-width: unset;
   }
 }
 
@@ -4510,15 +4521,17 @@ button.about__button svg {
   gap: 20px;
   -ms-grid-column-align: end;
       justify-self: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 @media (max-width: 1199px) {
   .footer__social-list {
     grid-area: C;
-    gap: 10px;
+    gap: 15px 10px;
+    margin-top: 4px;
     margin-bottom: 15px;
+    max-width: 130px;
   }
 }
 @media (max-width: 767px) {
@@ -4539,6 +4552,8 @@ button.about__button svg {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+    gap: 10px;
+    max-width: unset;
   }
 }
 
@@ -4606,6 +4621,8 @@ button.about__button svg {
   -ms-grid-column-align: end;
       justify-self: end;
   border-bottom: 1px solid #484848;
+  -ms-grid-row-align: self-start;
+      align-self: self-start;
 }
 .footer__copyright:hover, .footer__copyright:focus, .footer__copyright:focus-visible {
   color: #316dc2;
@@ -4827,23 +4844,24 @@ button.about__button svg {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 100px 60px;
+  padding: 335px 100px 60px;
   margin: 0 auto;
   max-width: 1440px;
+  min-height: 800px;
   visibility: visible;
   -webkit-transition: visibility 0.3s ease;
   transition: visibility 0.3s ease;
 }
 @media (max-width: 1199px) {
   .hero__content {
-    padding: 30px 45px 60px;
-    margin-top: 625px;
+    padding: 335px 45px 60px;
+    min-height: 1024px;
   }
 }
 @media (max-width: 767px) {
   .hero__content {
-    padding: 20px 15px;
-    margin-top: unset;
+    padding: 231px 15px 19px;
+    min-height: 568px;
   }
 }
 .hero__content h2 {
@@ -5076,6 +5094,15 @@ button.about__button svg {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
+  }
+}
+
+.hero__button span {
+  padding: 15px 55px 15px 29px;
+}
+@media (max-width: 767px) {
+  .hero__button span {
+    padding: 12px 57px 14px 19px;
   }
 }
 
@@ -6038,16 +6065,17 @@ button.about__button svg {
   line-height: 14px;
   font-weight: 500;
   letter-spacing: 0.2px;
-  padding: 0 0 0 29px;
+  padding: 15px 50px 15px 29px;
   text-transform: uppercase;
   color: #316dc2;
+  text-align: center;
 }
 @media (max-width: 1199px) {
   .programs__button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0 50px 0 0;
+    padding: 15px 67px 15px 15px;
     width: 32%;
     margin: 0 45px 0 0;
   }
@@ -6062,7 +6090,7 @@ button.about__button svg {
     left: 0;
     min-width: 203px;
     width: 70%;
-    padding: 0 38px 0 0;
+    padding: 15px 50px 15px 15px;
   }
 }
 
@@ -6098,14 +6126,13 @@ button.about__button svg {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 392px;
-  max-height: 420px;
+  height: auto;
 }
 @media (max-width: 1199px) {
   .programs__item {
     width: 100%;
     min-width: 324px;
     height: auto;
-    max-height: unset;
   }
 }
 @media (max-width: 767px) {
@@ -6176,8 +6203,8 @@ button.about__button svg {
 .programs__text h3::before {
   content: "";
   position: absolute;
-  top: 24px;
   right: -18px;
+  bottom: 0;
   width: 18px;
   height: 18px;
   background-image: url("../img/svg/angle-up.svg");
@@ -6186,13 +6213,7 @@ button.about__button svg {
 }
 @media (max-width: 1199px) {
   .programs__text h3::before {
-    top: 20px;
     right: -18px;
-  }
-}
-@media (max-width: 767px) {
-  .programs__text h3::before {
-    top: 24px;
   }
 }
 @media (max-width: 1199px) {

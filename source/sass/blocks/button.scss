@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   width: 196px;
-  height: 54px;
+  min-height: 54px;
   background-color: $color-transparent;
   border: 1px solid $color-cerulean-blue;
   border-radius: 30px;
@@ -13,7 +13,7 @@
 
   @include vp-767 {
     width: 152px;
-    height: 42px;
+    min-height: 42px;
   }
 
   span {

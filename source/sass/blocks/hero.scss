@@ -60,20 +60,21 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0 100px 60px;
+  padding: 335px 100px 60px;
   margin: 0 auto;
   max-width: 1440px;
+  min-height:  800px;
   visibility: visible;
   transition: visibility $trans-default;
 
   @include vp-1199 {
-    padding: 30px 45px 60px;
-    margin-top: 625px;
+    padding: 335px 45px 60px;
+    min-height: 1024px;
   }
 
   @include vp-767 {
-    padding: 20px 15px;
-    margin-top: unset;
+    padding: 231px 15px 19px;
+    min-height: 568px;
   }
 
   h2 {
@@ -277,5 +278,15 @@
     background-color: $color-default-white;
     border-radius: 0 0 14px 14px;
     align-self: start;
+  }
+}
+
+.hero__button {
+  span {
+    padding: 15px 55px 15px 29px;
+
+    @include vp-767 {
+      padding: 12px 57px 14px 19px;
+    }
   }
 }

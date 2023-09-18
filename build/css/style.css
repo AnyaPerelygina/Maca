@@ -5618,6 +5618,7 @@ button.about__button svg {
 @media (max-width: 767px) {
   .news__item {
     min-height: 330px;
+    height: unset;
   }
   .news__item img {
     min-height: 330px;

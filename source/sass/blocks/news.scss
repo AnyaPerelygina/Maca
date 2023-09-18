@@ -141,6 +141,7 @@
 
   @include vp-767 {
     min-height: 330px;
+    height: unset;
 
     img {
       min-height: 330px;

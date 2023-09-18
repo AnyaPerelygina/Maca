@@ -5748,6 +5748,7 @@ button.about__button svg {
   content: "";
   position: absolute;
   top: -16px;
+  bottom: 0;
   left: 0;
   width: 16px;
   height: 16px;
@@ -5783,10 +5784,12 @@ button.about__button svg {
 @media (max-width: 767px) {
   .news__content {
     margin-right: 27px;
+    bottom: 0;
   }
   .news__content h3 {
     max-width: 76%;
-    padding: 10px 18px 4px 0;
+    padding: 10px 18px 6px 0;
+    margin: 0 0 -1px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -5869,7 +5872,7 @@ button.about__button svg {
 }
 @media (max-width: 767px) {
   .news__text {
-    padding: 11px 11px 12px 0;
+    padding: 12px 11px 12px 0;
     bottom: 0;
   }
 }

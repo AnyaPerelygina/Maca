@@ -5783,8 +5783,8 @@ button.about__button svg {
 }
 @media (max-width: 767px) {
   .news__content {
-    margin-right: 27px;
-    bottom: 0;
+    margin-right: 14px;
+    bottom: -4px;
     padding: 12px 12px 3px 0;
   }
   .news__content h3 {
@@ -5831,7 +5831,7 @@ button.about__button svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 9px 18px 12px 0;
+  padding: 11px 18px 10px 0;
   background-color: #f0efe9;
   border-radius: 0 12px 0 0;
   gap: 0 16px;

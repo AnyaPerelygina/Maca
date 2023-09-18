@@ -284,8 +284,8 @@
   }
 
   @include vp-767 {
-    margin-right: 27px;
-    bottom: 0;
+    margin-right: 14px;
+    bottom: -4px;
     padding: 12px 12px 3px 0;
 
     h3 {
@@ -329,7 +329,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 9px 18px 12px 0;
+  padding: 11px 18px 10px 0;
   background-color: $color-alabaster;
   border-radius: 0 12px 0 0;
   gap: 0 16px;

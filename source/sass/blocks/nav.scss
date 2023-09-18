@@ -29,7 +29,8 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    left: 15px;
+    width: auto;
     right: 15px;
   }
 }

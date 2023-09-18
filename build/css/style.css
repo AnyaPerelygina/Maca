@@ -4686,11 +4686,6 @@ button.about__button svg {
   inset: 0;
   height: 100vh;
 }
-@media (max-width: 767px) {
-  .header__container.is-opened {
-    margin-left: 30px;
-  }
-}
 
 .header__container {
   display: -ms-grid;
@@ -5383,7 +5378,8 @@ button.about__button svg {
 }
 @media (max-width: 767px) {
   .nav.is-opened {
-    width: 100%;
+    left: 15px;
+    width: auto;
     right: 15px;
   }
 }
@@ -6826,8 +6822,9 @@ button.about__button svg {
 }
 @media (max-width: 767px) {
   .toggle.is-opened {
-    min-width: 290px;
-    width: 100%;
+    left: 15px;
+    width: auto;
+    right: 15px;
   }
 }
 .toggle.is-opened:hover, .toggle.is-opened:focus, .toggle.is-opened:focus-visible {

@@ -2963,6 +2963,9 @@ button.about__button svg {
     margin: 29px auto 0;
   }
 }
+.contacts__map picture {
+  background-color: #316dc2;
+}
 
 .modal {
   position: fixed;
@@ -4122,6 +4125,7 @@ button.about__button svg {
   border-radius: 16px;
   min-height: 803px;
   height: 100%;
+  background-color: #316dc2;
 }
 @media (max-width: 1199px) {
   .feedback__container img {
@@ -5095,6 +5099,7 @@ button.about__button svg {
   width: 498px;
   height: 363px;
   border-radius: 16px;
+  background-color: #316dc2;
 }
 @media (max-width: 1199px) {
   .instruction__container img {
@@ -5568,6 +5573,7 @@ button.about__button svg {
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
+  background-color: #316dc2;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .news__item {
@@ -6105,6 +6111,7 @@ button.about__button svg {
 }
 .programs__item img {
   border-radius: 12px;
+  background-color: #316dc2;
 }
 @media (max-width: 1199px) {
   .programs__item img {
@@ -6777,6 +6784,20 @@ button.about__button svg {
     min-width: 290px;
     width: 100%;
   }
+}
+.toggle.is-opened:hover, .toggle.is-opened:focus, .toggle.is-opened:focus-visible {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+.toggle.is-opened:hover span, .toggle.is-opened:focus span, .toggle.is-opened:focus-visible span {
+  color: #316dc2;
+  outline: none;
+}
+.toggle.is-opened:hover svg, .toggle.is-opened:focus svg, .toggle.is-opened:focus-visible svg {
+  color: #ffffff;
+  background-color: #316dc2;
+  outline: none;
 }
 .toggle.is-opened:active {
   background-color: #ffffff;

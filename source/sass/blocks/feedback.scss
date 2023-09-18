@@ -34,6 +34,7 @@
     border-radius: 16px;
     min-height: 803px;
     height: 100%;
+    background-color: $color-cerulean-blue;
 
     @include vp-1199 {
       min-height: unset;
@@ -159,12 +160,6 @@
     }
   }
 }
-
-// .feedback__form .custom-input input {
-//   &:hover {
-//     border-color: $color-default-white;
-//   }
-// }
 
 .feedback__button {
   font-size: 15px;

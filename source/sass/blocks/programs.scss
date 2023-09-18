@@ -129,6 +129,7 @@
 
   img {
     border-radius: 12px;
+    background-color: $color-cerulean-blue;
 
     @include vp-1199 {
       width: 100%;

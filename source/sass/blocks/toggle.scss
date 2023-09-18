@@ -102,24 +102,24 @@
     width: 100%;
   }
 
-  // &:hover,
-  // &:focus,
-  // &:focus-visible {
-  //   background-color: $color-default-white;
-  //   border: none;
-  //   outline: none;
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: $color-default-white;
+    border: none;
+    outline: none;
 
-  //   span {
-  //     color: $color-cerulean-blue;
-  //     outline: none;
-  //   }
+    span {
+      color: $color-cerulean-blue;
+      outline: none;
+    }
 
-  //   svg {
-  //     color: $color-default-white;
-  //     background-color: $color-cerulean-blue;
-  //     outline: none;
-  //   }
-  // }
+    svg {
+      color: $color-default-white;
+      background-color: $color-cerulean-blue;
+      outline: none;
+    }
+  }
 
   &:active {
     background-color: $color-default-white;
@@ -163,7 +163,6 @@
 
 .toggle.is-opened .toggle__closed {
   display: inline;
-  // color: $color-default-white;
   opacity: 1;
   color: $color-cerulean-blue;
 }

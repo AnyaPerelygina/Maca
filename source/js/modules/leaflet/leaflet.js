@@ -10,7 +10,7 @@ let initLeaflet = () => {
   let myIcon = L.icon({
     iconUrl: 'img/svg/pin.svg',
     iconAnchor: [50, 50],
-    iconSize: [50, 50],
+    iconSize: [50, 70],
   });
 
   L.marker([55.0286301613192, 82.9282483391627], {icon: myIcon}).addTo(map);

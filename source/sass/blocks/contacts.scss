@@ -96,17 +96,6 @@
     @include vp-767 {
       font-size: 14px;
     }
-
-    &:hover,
-    &:focus {
-      border-bottom: 1px solid $color-default-white;
-      margin-bottom: -1px;
-      outline: none;
-    }
-
-    &:active {
-      opacity: 0.8;
-    }
   }
 
   p {
@@ -116,6 +105,17 @@
 
 .contacts__link {
   max-width: 132px;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-default-white;
+    margin-bottom: -1px;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .contacts__subtitle {

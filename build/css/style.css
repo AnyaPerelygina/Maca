@@ -2933,23 +2933,20 @@ button.about__button svg {
     font-size: 14px;
   }
 }
-.contacts__item p:hover, .contacts__item p:focus,
-.contacts__item .contacts__link:hover,
-.contacts__item .contacts__link:focus {
-  border-bottom: 1px solid #ffffff;
-  margin-bottom: -1px;
-  outline: none;
-}
-.contacts__item p:active,
-.contacts__item .contacts__link:active {
-  opacity: 0.8;
-}
 .contacts__item p {
   max-width: 270px;
 }
 
 .contacts__link {
   max-width: 132px;
+}
+.contacts__link:hover, .contacts__link:focus {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: -1px;
+  outline: none;
+}
+.contacts__link:active {
+  opacity: 0.8;
 }
 
 .contacts__subtitle {

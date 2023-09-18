@@ -2847,8 +2847,13 @@ button.about__button svg {
   color: #ffffff;
   text-align: start;
   margin: 0;
-  padding: 0;
   max-width: 300px;
+  padding: 7px 0 0;
+}
+@media (max-width: 1199px) {
+  .contacts__title {
+    padding: 0;
+  }
 }
 
 .contacts__list {
@@ -2961,6 +2966,7 @@ button.about__button svg {
   margin: 41px auto 0;
   border-radius: 16px;
   max-width: 1240px;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .contacts__map {
@@ -4521,9 +4527,9 @@ button.about__button svg {
   gap: 20px;
   -ms-grid-column-align: end;
       justify-self: end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 1199px) {
   .footer__social-list {
@@ -4532,6 +4538,9 @@ button.about__button svg {
     margin-top: 4px;
     margin-bottom: 15px;
     max-width: 130px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 @media (max-width: 767px) {

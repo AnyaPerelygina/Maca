@@ -38,8 +38,12 @@
   color: $color-default-white;
   text-align: start;
   margin: 0;
-  padding: 0;
   max-width: 300px;
+  padding: 7px 0 0; 
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .contacts__list {
@@ -67,7 +71,6 @@
   align-items: start;
   justify-content: start;
   gap: 15px;
-  // max-width: 130px;
 
   @include vp-1199 {
     gap: 17px;
@@ -129,6 +132,7 @@
   margin: 41px auto 0;
   border-radius: 16px;
   max-width: 1240px;
+  width: 100%;
 
   @include vp-1199 {
     margin: 32px auto 0;

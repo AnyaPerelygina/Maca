@@ -1,58 +1,52 @@
-import swiper from '../../vendor/swiper';
+import Swiper from '../../vendor/swiper';
 
-const elementNews = document.querySelector('.news__swiper');
 const createNewsSlider = () => {
-  if (elementNews) {
-    /* eslint-disable */
-    new swiper('.news__swiper', {
-      /* eslint-enable */
-      speed: 1500,
-      loop: false,
-      updateOnWindowResize: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          grid: {
-            rows: 2,
-            fill: 'row',
-          },
-          allowTouchMove: true,
+  let swiper = new Swiper('.news__swiper', {
+    speed: 1500,
+    loop: false,
+    updateOnWindowResize: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+          fill: 'row',
         },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          grid: {
-            rows: 2,
-            fill: 'row',
-          },
-          allowTouchMove: true,
+        allowTouchMove: true,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 2,
+          fill: 'row',
         },
-        1200: {
-          slidesPerView: 'auto',
-          spaceBetween: 32,
-          grid: {
-            rows: 1,
-          },
-          allowTouchMove: false,
+        allowTouchMove: true,
+      },
+      1200: {
+        slidesPerView: 'auto',
+        spaceBetween: 32,
+        grid: {
+          rows: 1,
         },
+        allowTouchMove: false,
       },
-      pagination: {
-        el: '.news__pagination',
-        clickable: true,
-        /* eslint-disable */
-        renderBullet:
-          function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-          },
+    },
+    pagination: {
+      el: '.news__pagination',
+      clickable: true,
+      renderBullet: (index, className) => {
+        return `<button class="news__pagination-button ${className} type="button" aria-label="Перейти к ${index + 1} слайду">${index + 1}</button>`;
       },
-      /* eslint-enable */
-      navigation: {
-        nextEl: '.news__next',
-        prevEl: '.news__prev',
-      },
-    });
-  }
+    },
+    navigation: {
+      nextEl: '.news__next',
+      prevEl: '.news__prev',
+    },
+  });
+
+  return swiper;
 };
 
 export {createNewsSlider};

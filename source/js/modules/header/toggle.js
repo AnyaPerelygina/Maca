@@ -1,5 +1,3 @@
-// import {ScrollLock} from '../../utils/scroll-lock';
-
 const addToggleMenu = () => {
   const OPENED_CLASS = 'is-opened';
   const LINK_CLASS = '.nav__link';

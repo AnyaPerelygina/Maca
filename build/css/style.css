@@ -3821,6 +3821,10 @@ button.about__button svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .faq__item {
@@ -4650,6 +4654,11 @@ button.about__button svg {
   inset: 0;
   height: 100vh;
 }
+@media (max-width: 767px) {
+  .header__container.is-opened {
+    margin-left: 30px;
+  }
+}
 
 .header__container {
   display: -ms-grid;
@@ -4669,12 +4678,6 @@ button.about__button svg {
 @media (max-width: 767px) {
   .header__container {
     padding: 20px 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header__container.is-opened {
-    margin-left: 30px;
   }
 }
 
@@ -5863,6 +5866,10 @@ button.about__button svg {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .news__pagination {

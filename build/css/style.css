@@ -3468,7 +3468,8 @@ button.about__button svg {
 }
 
 .custom-toggle input:checked:hover + .custom-toggle__icon, .custom-toggle input:checked:focus + .custom-toggle__icon {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #316dc2;
+  border-color: #316dc2;
 }
 .custom-toggle input:checked:hover + .custom-toggle__icon::before, .custom-toggle input:checked:focus + .custom-toggle__icon::before {
   background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
@@ -3479,6 +3480,10 @@ button.about__button svg {
 }
 .custom-toggle input:checked:disabled + .custom-toggle__icon::before {
   background-image: url('data:image/svg+xml,<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.custom-toggle--primary input:checked:hover + .custom-toggle__icon, .custom-toggle--primary input:checked:focus + .custom-toggle__icon {
+  border-color: #ffffff;
 }
 
 .custom-toggle--checkbox .custom-toggle__icon {

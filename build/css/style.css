@@ -2848,7 +2848,7 @@ button.about__button svg {
   text-align: start;
   margin: 0;
   max-width: 300px;
-  padding: 7px 0 0;
+  padding: 7px 50px 0 0;
 }
 @media (max-width: 1199px) {
   .contacts__title {

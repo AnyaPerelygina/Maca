@@ -80,9 +80,10 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-self: start;
-  align-items: center;
+  align-items: start;
   grid-column: span 2;
   margin-left: 53px;
+  padding: 12px 0 0 0;
 
   @include vp-1199 {
     margin: 0 0 15px;
@@ -102,6 +103,7 @@
     column-gap: 30px;
     row-gap: 6px;
     margin-bottom: 8px;
+    padding: 0;
     max-width: unset;
   }
 }

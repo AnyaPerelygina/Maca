@@ -4444,12 +4444,13 @@ button.about__button svg {
   gap: 30px;
   -ms-grid-column-align: start;
       justify-self: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   margin-left: 53px;
+  padding: 12px 0 0 0;
 }
 @media (max-width: 1199px) {
   .footer__nav-list {
@@ -4483,6 +4484,7 @@ button.about__button svg {
             column-gap: 30px;
     row-gap: 6px;
     margin-bottom: 8px;
+    padding: 0;
     max-width: unset;
   }
 }

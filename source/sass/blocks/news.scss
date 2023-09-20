@@ -23,7 +23,7 @@
   }
 
   @include vp-767 {
-    gap: 25px 0;
+    gap: 24px 0;
   }
 }
 
@@ -33,7 +33,7 @@
   margin: 0 0 4px;
 
   @include vp-767 {
-    margin: 0;
+    margin: 0 0 3px;
   }
 }
 
@@ -58,7 +58,7 @@
     width: calc(100% + 15px);
     padding-right: 15px;
     overflow-x: auto;
-    gap: 0 11px;
+    gap: 0 12px;
   }
 }
 
@@ -90,7 +90,7 @@
   @include vp-767 {
     font-size: 12px;
     line-height: 12px;
-    padding: 10px 14px;
+    padding: 10px 14px 9px;
   }
 }
 
@@ -180,7 +180,7 @@
 
     @include vp-767 {
       width: 30%;
-      padding: 14px 12px 3px 0;
+      padding: 11px 12px 5px 0;
       border-radius: 0 15px 0 0;
     }
   }
@@ -212,8 +212,8 @@
   @include vp-767 {
     .news__subtitle {
       max-width: 76%;
-      padding-top: 10px;
-      padding-bottom: 4px;
+      padding-top: 9px;
+      padding-bottom: 5px;
     }
 
     p {
@@ -241,7 +241,11 @@
     letter-spacing: 0.12px;
     background-color: $color-alabaster;
     border-radius: 0 12px 0 0;
-    max-width: 31%;
+    max-width: 30%;
+
+    @include vp-767 {
+      padding: 11px 12px 4px 0;
+    }
 
     &::before {
       content: "";
@@ -285,8 +289,8 @@
 
   @include vp-767 {
     margin-right: 14px;
-    bottom: -4px;
-    padding: 12px 12px 3px 0;
+    bottom: 0;
+    padding: 10px 12px 0 0;
 
     h3 {
       max-width: 76%;

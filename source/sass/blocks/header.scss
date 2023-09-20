@@ -6,7 +6,7 @@
   z-index: 3;
 }
 
-.header__container.is-opened {
+.header.is-opened {
   &::before {
     position: absolute;
     content: "";
@@ -14,6 +14,7 @@
     background-color: $overlay-dark;
     inset: 0;
     height: 100vh;
+    width: 100%;
   }
 }
 

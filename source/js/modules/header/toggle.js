@@ -2,7 +2,6 @@ const addToggleMenu = () => {
   const OPENED_CLASS = 'is-opened';
   const LINK_CLASS = '.nav__link';
   const root = document.querySelector('.header');
-  const container = root.querySelector('.header__container');
   const toggle = root.querySelector('.toggle');
   const nav = root.querySelector('.nav');
 
@@ -19,7 +18,7 @@ const addToggleMenu = () => {
   };
 
   const openMenu = () => {
-    container.classList.add(OPENED_CLASS);
+    root.classList.add(OPENED_CLASS);
     toggle.classList.add(OPENED_CLASS);
     nav.classList.add(OPENED_CLASS);
     document.addEventListener('keydown', onDocumentKeydown);
@@ -31,7 +30,7 @@ const addToggleMenu = () => {
   };
 
   const closeMenu = () => {
-    container.classList.remove(OPENED_CLASS);
+    root.classList.remove(OPENED_CLASS);
     toggle.classList.remove(OPENED_CLASS);
     nav.classList.remove(OPENED_CLASS);
     document.removeEventListener('keydown', onDocumentKeydown);

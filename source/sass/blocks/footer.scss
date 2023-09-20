@@ -102,7 +102,6 @@
     justify-content: center;
     margin: 0 auto;
     column-gap: 30px;
-    gap: 15px;
     row-gap: 5px;
     margin-bottom: 8px;
     padding: 0;
@@ -130,7 +129,7 @@
 
 .footer__social-list {
   list-style-type: none;
-  padding: 0;
+  padding: 12px 0 0;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -145,6 +144,7 @@
     margin-top: 5px;
     margin-bottom: 15px;
     max-width: 130px;
+    padding: 0;
   }
 
   @include vp-767 {

@@ -1,7 +1,7 @@
 .advantages {
   background-color: $color-cerulean-blue;
   border-radius: 20px;
-  padding: 90px 106px 57px 126px;
+  padding: 92px 106px 55px 126px;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     padding: 50px 30px;
@@ -23,7 +23,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 51px;
+  gap: 54px 51px;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     gap: 20px;
@@ -47,7 +47,7 @@
   color: $color-default-white;
   border-radius: 16px;
   border: 1px solid $color-alabaster;
-  padding: 30px 40px 30px 60px;
+  padding: 30px 40px 28px 55px;
   justify-content: center;
   position: relative;
 
@@ -103,7 +103,7 @@
 }
 
 .advantages__item:nth-child(odd) p {
-  padding: 0 0 0 10px;
+  padding: 0 0 0 8px;
 
   @include vp-1199 {
     padding: 0;

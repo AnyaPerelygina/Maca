@@ -1,5 +1,5 @@
 .programs {
-  padding: 62px 100px 122px;
+  padding: 64px 100px 121px;
   max-width: 1440px;
   margin: 0 auto;
 
@@ -35,7 +35,7 @@
 
 .programs__button {
   position: absolute;
-  top: 0;
+  top: -3px;
   right: 0;
   width: 232px;
   font-size: 14px;
@@ -48,6 +48,7 @@
   text-align: center;
 
   @include vp-1199 {
+    top: 0;
     justify-content: center;
     padding: 15px 67px 15px 15px;
     width: 32%;

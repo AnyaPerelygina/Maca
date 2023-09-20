@@ -88,10 +88,11 @@
   @include vp-1199 {
     margin: 0 0 15px;
     grid-column: span 3;
-    gap: 15px;
+    gap: 15.5px;
     justify-self: end;
     grid-area: B;
     max-width: 530px;
+    padding: 13px 0 0;
   }
 
   @include vp-767 {
@@ -101,6 +102,7 @@
     justify-content: center;
     margin: 0 auto;
     column-gap: 30px;
+    gap: 15px;
     row-gap: 5px;
     margin-bottom: 8px;
     padding: 0;
@@ -140,7 +142,7 @@
   @include vp-1199 {
     grid-area: C;
     gap: 15px 10px;
-    margin-top: 4px;
+    margin-top: 5px;
     margin-bottom: 15px;
     max-width: 130px;
   }

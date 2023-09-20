@@ -6433,7 +6433,7 @@ button.about__button svg {
 }
 @media (max-width: 1199px) {
   .reviews__item {
-    padding-bottom: 50px 50px 45px;
+    padding: 50px 50px 45px;
   }
 }
 @media (max-width: 767px) {

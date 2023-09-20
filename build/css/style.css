@@ -2316,7 +2316,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__wrapper-2 {
-    margin: 0 0 38px;
+    margin: 0 0 40px;
   }
 }
 .about__wrapper-2 p {
@@ -2394,7 +2394,7 @@ button.about__button svg {
     line-height: 12px;
     min-width: 221px;
     width: 76%;
-    padding: 15px 37px 15px 3px;
+    padding: 15px 41px 13px 3px;
   }
 }
 

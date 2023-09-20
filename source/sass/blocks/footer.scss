@@ -133,7 +133,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-self: end;
-  align-items: center;
+  align-items: start;
 
   @include vp-1199 {
     grid-area: C;
@@ -141,7 +141,6 @@
     margin-top: 4px;
     margin-bottom: 15px;
     max-width: 130px;
-    align-items: start;
   }
 
   @include vp-767 {

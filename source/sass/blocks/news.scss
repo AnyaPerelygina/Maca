@@ -149,10 +149,11 @@
   @include vp-767 {
     min-height: 330px;
     width: 100%;
-    height: 71vw;
+    height: 100vw;
 
     &--bottom {
       min-height: 240px;
+      height: 71vw;
     }
   }
 }

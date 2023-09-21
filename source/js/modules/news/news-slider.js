@@ -6,7 +6,7 @@ const createNewsSlider = () => {
     loop: false,
     updateOnWindowResize: true,
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 1,
         spaceBetween: 20,
         grid: {

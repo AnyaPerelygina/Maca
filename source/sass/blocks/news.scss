@@ -122,61 +122,64 @@
 }
 
 .news__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  position: relative;
+  border-radius: 12px;
+  height: auto;
+  width: 24.4%;
   max-width: 286px;
-  background-color: $color-alabaster;
 
   img {
-    width: 100%;
-    height: 400px;
-    border-radius: 12px;
     object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
     background-color: $color-cerulean-blue;
   }
 
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    max-width: 28.5%;
+  @media (max-width: 1250px) {
+    max-width: 242px;
   }
 
   @include vp-1199 {
-    max-width: 100%;
-    height: 45.6vw;
-
-    img {
-      width: 100%;
-      height: 45.6vw;
-      max-height: unset;
-    }
+    height: 45.57vw;
+    width: auto;
+    max-width: unset;
   }
 
   @include vp-767 {
     min-height: 330px;
-    height: unset;
-
-    img {
-      min-height: 330px;
-      height: 100vw;
-      max-height: unset;
-    }
+    width: 100%;
+    height: 71vw;
 
     &--bottom {
       min-height: 240px;
-
-      img {
-        height: 75vw;
-        min-height: 240px;
-      }
     }
   }
 }
 
 .news__item:first-child {
   max-width: 604px;
+  width: 48.8%;
 
-  @media (min-width: 1200px) and (max-width: 1439px) {
-    max-width: 36%;
+  .news__content {
+    width: 64.5%;
+
+    @media (min-width: 1200px) and (max-width: 1439px) {
+      width: 100%;
+    }
+
+    @include vp-1199 {
+      width: 74.1%;
+    }
+
+    @include vp-767 {
+      width: 95%;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    max-width: 493px;
+    width: 44.8%;
   }
 
   .news__data {
@@ -208,7 +211,9 @@
   }
 
   @include vp-1199 {
-    max-width: 100%;
+    height: 45.57vw;
+    width: auto;
+    max-width: unset;
 
     .news__subtitle {
       max-width: 86%;
@@ -222,10 +227,12 @@
   }
 
   @include vp-767 {
+    height: 100vw;
+
     .news__subtitle {
+      width: 100%;
       max-width: 76%;
-      padding-top: 9px;
-      padding-bottom: 5px;
+      padding: 10px 10px 5px 0;
     }
 
     p {
@@ -236,6 +243,11 @@
 
 .news__content {
   position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 84%;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -291,10 +303,12 @@
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     margin-right: 30px;
+    width: 100%;
   }
 
   @include vp-1199 {
     margin-right: 84px;
+    width: 74.1%;
 
     h3 {
       max-width: calc(86% + 1px);
@@ -309,6 +323,7 @@
     margin-right: 14px;
     bottom: 0;
     padding: 10px 12px 0 0;
+    width: 95%;
 
     h3 {
       max-width: 76%;

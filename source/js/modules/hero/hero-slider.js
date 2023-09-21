@@ -1,9 +1,10 @@
 import Swiper from '../../vendor/swiper';
+import {isMobile} from '../../utils/is-mobile';
 
 const createHeroSlider = () => {
   let swiper = new Swiper('.hero__swiper', {
     speed: 1500,
-    loop: false,
+    allowTouchMove: isMobile(),
     effect: 'fade',
     autoplay: {
       delay: 3000,
@@ -12,12 +13,15 @@ const createHeroSlider = () => {
     breakpoints: {
       320: {
         allowTouchMove: true,
+        loop: true,
       },
       768: {
         allowTouchMove: true,
+        loop: true,
       },
       1200: {
         allowTouchMove: false,
+        loop: false,
       },
     },
     pagination: {

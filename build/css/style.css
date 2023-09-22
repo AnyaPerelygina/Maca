@@ -6749,14 +6749,14 @@ button.about__button svg {
   overflow: hidden;
   list-style-type: none;
   margin: 0;
-  padding: 6px 0 0 16px;
+  padding: 0 0 0 16px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   gap: 2px 0;
 }
 
-.subnav__list .nav__item.is-active {
-  padding: 6px 0 0 10px;
+.nav__item.is-active .subnav {
+  padding: 6px 0 0 16px;
 }
 
 .subnav__link {
@@ -6764,6 +6764,10 @@ button.about__button svg {
   opacity: 0.7;
   text-transform: none;
   letter-spacing: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .subnav__link--current {
   opacity: 1;

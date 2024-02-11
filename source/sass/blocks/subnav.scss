@@ -15,9 +15,9 @@
   padding: 6px 0 0 16px;
 }
 
-.subnav.is-active .subnav__link {
-  visibility: visible;
-}
+// .subnav.is-active .subnav__link {
+//   visibility: visible;
+// }
 
 .subnav__link {
   color: $color-default-white;
@@ -25,7 +25,7 @@
   text-transform: none;
   letter-spacing: normal;
   user-select: none;
-  visibility: hidden;
+  // visibility: hidden;
 
   &--current {
     opacity: 1;
